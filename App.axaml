@@ -1,0 +1,129 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="PSTFuze.App"
+             RequestedThemeVariant="Dark">
+    <Application.Styles>
+        <FluentTheme />
+    </Application.Styles>
+
+    <Application.Resources>
+        <!-- Icon Resources -->
+        <StreamGeometry x:Key="plus_regular">M12.75 12.75a.75.75 0 1 1-1.5 0V7.5h-5.25a.75.75 0 1 1 0-1.5H11.25V.75a.75.75 0 1 1 1.5 0V6h5.25a.75.75 0 1 1 0 1.5h-5.25v5.25Z</StreamGeometry>
+        <StreamGeometry x:Key="delete_regular">M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97L12 10.94l1.72-1.72a.75.75 0 1 1 1.06 1.06L13.06 12l1.72 1.72a.75.75 0 1 1-1.06 1.06L12 13.06l-1.72 1.72a.75.75 0 0 1-1.06-1.06L10.94 12l-1.72-1.72a.75.75 0 0 1 1.06-1.06Z</StreamGeometry>
+        <StreamGeometry x:Key="folder_regular">M19.5 21a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-5.379a.75.75 0 0 1-.53-.22L11.47 3.66A2.25 2.25 0 0 0 9.879 3H4.5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h15Zm-6.75-10.5a.75.75 0 0 0-1.5 0v4.19l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V10.5Z</StreamGeometry>
+        <StreamGeometry x:Key="arrow_merge_regular">M20.03 3.97a.75.75 0 0 1 0 1.06L17.81 7.25h1.69a3 3 0 0 1 3 3v4.5a3 3 0 0 1-3 3h-6a.75.75 0 0 1 0-1.5h6a1.5 1.5 0 0 0 1.5-1.5v-4.5a1.5 1.5 0 0 0-1.5-1.5h-1.69l2.22 2.22a.75.75 0 1 1-1.06 1.06l-3.5-3.5a.75.75 0 0 1 0-1.06l3.5-3.5a.75.75 0 0 1 1.06 0ZM4.5 7.25h1.69L3.97 5.03a.75.75 0 0 1 1.06-1.06l3.5 3.5a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 1 1-1.06-1.06l2.22-2.22H4.5a1.5 1.5 0 0 0-1.5 1.5v4.5a1.5 1.5 0 0 0 1.5 1.5h6a.75.75 0 0 1 0 1.5h-6a3 3 0 0 1-3-3v-4.5a3 3 0 0 1 3-3Z</StreamGeometry>
+
+        <!-- Modern Dark Theme Colors -->
+        <Color x:Key="PrimaryBackgroundColor">#1C1E2D</Color>
+        <Color x:Key="SecondaryBackgroundColor">#252837</Color>
+        <Color x:Key="PrimaryBlue">#4361EE</Color>
+        <Color x:Key="LightBlue">#4895EF</Color>
+        <Color x:Key="DarkBlue">#3347C4</Color>
+        <Color x:Key="CardBackground">#252837</Color>
+        <Color x:Key="TextPrimary">#FFFFFF</Color>
+        <Color x:Key="TextSecondary">#9BA1B0</Color>
+
+        <!-- Brushes -->
+        <LinearGradientBrush x:Key="WindowBackground" StartPoint="0%,0%" EndPoint="100%,100%">
+            <GradientStop Offset="0" Color="#1C1E2D"/>
+            <GradientStop Offset="1" Color="#252837"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="ButtonGradient" StartPoint="0%,0%" EndPoint="100%,100%">
+            <GradientStop Offset="0" Color="#4361EE"/>
+            <GradientStop Offset="1" Color="#3347C4"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="ProgressGradient" StartPoint="0%,0%" EndPoint="100%,0%">
+            <GradientStop Offset="0" Color="#4361EE"/>
+            <GradientStop Offset="1" Color="#4895EF"/>
+        </LinearGradientBrush>
+    </Application.Resources>
+
+    <Application.Styles>
+        <FluentTheme />
+        
+        <!-- Custom Styles -->
+        <Style Selector="Window">
+            <Setter Property="Background" Value="{DynamicResource WindowBackground}"/>
+            <Setter Property="TransparencyLevelHint" Value="AcrylicBlur"/>
+            <Setter Property="ExtendClientAreaToDecorationsHint" Value="True"/>
+        </Style>
+
+        <Style Selector="Button">
+            <Setter Property="Background" Value="{DynamicResource PrimaryBlue}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Padding" Value="16,8"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+
+        <Style Selector="Button:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource LightBlue}"/>
+            <Setter Property="Opacity" Value="1"/>
+        </Style>
+
+        <Style Selector="ProgressBar">
+            <Setter Property="Foreground" Value="{DynamicResource ProgressGradient}"/>
+            <Setter Property="Background" Value="#2D3142"/>
+            <Setter Property="Height" Value="4"/>
+            <Setter Property="CornerRadius" Value="2"/>
+        </Style>
+
+        <Style Selector="Border.card">
+            <Setter Property="Background" Value="{DynamicResource CardBackground}"/>
+            <Setter Property="CornerRadius" Value="16"/>
+            <Setter Property="BoxShadow" Value="0 4 25 0 #20000000"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#30FFFFFF"/>
+            <Setter Property="Padding" Value="20"/>
+        </Style>
+
+        <Style Selector="TextBlock">
+            <Setter Property="Foreground" Value="{DynamicResource TextPrimary}"/>
+        </Style>
+
+        <Style Selector="TextBlock.subtitle">
+            <Setter Property="Foreground" Value="{DynamicResource TextSecondary}"/>
+            <Setter Property="FontSize" Value="13"/>
+        </Style>
+
+        <Style Selector="PathIcon">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Width" Value="16"/>
+            <Setter Property="Height" Value="16"/>
+        </Style>
+
+        <!-- List Item Styles -->
+        <Style Selector="Grid.list-item">
+            <Setter Property="Background" Value="{DynamicResource SecondaryBackgroundColor}"/>
+            <Setter Property="Margin" Value="0,4"/>
+            <Setter Property="Height" Value="50"/>
+        </Style>
+
+        <!-- Header Styles -->
+        <Style Selector="TextBlock.header">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Margin" Value="0,0,0,16"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+
+        <!-- Card Title Styles -->
+        <Style Selector="TextBlock.card-title">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Margin" Value="0,0,0,8"/>
+        </Style>
+
+        <!-- Input Field Styles -->
+        <Style Selector="TextBox">
+            <Setter Property="Background" Value="#2D3142"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#30FFFFFF"/>
+        </Style>
+    </Application.Styles>
+</Application>

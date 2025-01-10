@@ -1,0 +1,126 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="using:PSTFuze.ViewModels"
+        xmlns:models="using:PSTFuze.Models"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+        x:Class="PSTFuze.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/pstfuzer.ico"
+        Title="PST Fuzer - A Mooninite Product"
+        Width="800" Height="600"
+        WindowStartupLocation="CenterScreen">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Grid Margin="20" RowDefinitions="Auto,Auto,*,Auto,Auto">
+        <!-- Header with Logo and Title -->
+        <StackPanel Grid.Row="0" 
+                    Orientation="Horizontal" 
+                    Spacing="10" 
+                    Margin="0,0,0,20">
+            <Image Source="/Assets/pstfuzer.ico" 
+                   Width="32" 
+                   Height="32"/>
+            <TextBlock Text="PST Fuzer" 
+                      VerticalAlignment="Center"
+                      FontSize="24"
+                      FontWeight="SemiBold"/>
+        </StackPanel>
+
+        <!-- Action Buttons -->
+        <StackPanel Grid.Row="1" 
+                    Orientation="Horizontal" 
+                    Spacing="10" 
+                    Margin="0,0,0,20">
+            <Button Command="{Binding AddFilesCommand}">
+                <StackPanel Orientation="Horizontal" Spacing="5">
+                    <PathIcon Data="{StaticResource plus_regular}"/>
+                    <TextBlock Text="Add Files"/>
+                </StackPanel>
+            </Button>
+            
+            <Button Command="{Binding SelectOutputCommand}">
+                <StackPanel Orientation="Horizontal" Spacing="5">
+                    <PathIcon Data="{StaticResource folder_regular}"/>
+                    <TextBlock Text="Select Output"/>
+                </StackPanel>
+            </Button>
+
+            <Button Command="{Binding MergeCommand}" 
+                    IsEnabled="{Binding !IsMerging}">
+                <StackPanel Orientation="Horizontal" Spacing="5">
+                    <PathIcon Data="{StaticResource arrow_merge_regular}"/>
+                    <TextBlock Text="Merge PSTs"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+        <!-- PST Files List -->
+        <Border Grid.Row="2" 
+                Classes="card"
+                Margin="0,0,0,20">
+            <ScrollViewer>
+                <ItemsControl ItemsSource="{Binding PstFiles}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate x:DataType="models:PstFileModel">
+                            <Grid Margin="10,5" ColumnDefinitions="*,Auto">
+                                <TextBlock Text="{Binding FilePath}" 
+                                         VerticalAlignment="Center"/>
+                                <Button Grid.Column="1" 
+                                        Command="{Binding ((vm:MainWindowViewModel)DataContext).RemoveFileCommand, RelativeSource={RelativeSource AncestorType=ItemsControl}}" 
+                                        CommandParameter="{Binding}"
+                                        Padding="5">
+                                    <PathIcon Data="{StaticResource delete_regular}"/>
+                                </Button>
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </Border>
+
+        <!-- Progress Section -->
+        <StackPanel Grid.Row="3" 
+                    Margin="0,0,0,20" 
+                    IsVisible="{Binding IsMerging}">
+            <Grid ColumnDefinitions="*,Auto" Margin="0,0,0,10">
+                <TextBlock Text="Progress:" 
+                         Grid.Column="0" 
+                         VerticalAlignment="Center"/>
+                <Button Grid.Column="1" 
+                        Command="{Binding CancelMergeCommand}"
+                        Background="#dc3545"
+                        Foreground="White"
+                        Padding="15,8"
+                        Margin="10,0,0,0"
+                        IsVisible="{Binding IsMerging}">
+                    <StackPanel Orientation="Horizontal" Spacing="5">
+                        <PathIcon Data="{StaticResource delete_regular}"/>
+                        <TextBlock Text="Cancel Merge"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <ProgressBar Value="{Binding Progress}" 
+                       Maximum="100" 
+                       Height="20"
+                       ShowProgressText="True"/>
+        </StackPanel>
+
+        <!-- Status Bar -->
+        <Border Grid.Row="4" 
+                Classes="card">
+            <Grid ColumnDefinitions="*,Auto">
+                <TextBlock Text="{Binding StatusMessage}" 
+                         VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="1" 
+                         Text="{Binding OutputLocation}" 
+                         VerticalAlignment="Center"
+                         IsVisible="{Binding OutputLocation, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

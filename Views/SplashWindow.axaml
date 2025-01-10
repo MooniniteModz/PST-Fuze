@@ -1,0 +1,21 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="PSTFuze.Views.SplashWindow"
+        Title="PST Fuzer"
+        Width="600" Height="480"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        SystemDecorations="None"
+        TransparencyLevelHint="Transparent"
+        WindowState="Normal"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="-1">
+    
+    <Panel>
+        <Image Source="/Assets/logo.png" 
+               Width="600" 
+               Height="480"
+               Stretch="Uniform"/>
+    </Panel>
+</Window>

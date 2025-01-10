@@ -1,0 +1,106 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\C#\\PstFuze\\PstFuze.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\C#\\PstFuze\\PstFuze.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\C#\\PstFuze\\PstFuze.csproj",
+        "projectName": "PstFuze",
+        "projectPath": "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\C#\\PstFuze\\PstFuze.csproj",
+        "packagesPath": "C:\\Users\\xadm_cmoore\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\C#\\PstFuze\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\xadm_cmoore\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Aspose.Email": {
+              "target": "Package",
+              "version": "[23.12.0, )"
+            },
+            "Avalonia": {
+              "target": "Package",
+              "version": "[11.0.6, )"
+            },
+            "Avalonia.Desktop": {
+              "target": "Package",
+              "version": "[11.0.6, )"
+            },
+            "Avalonia.Fonts.Inter": {
+              "target": "Package",
+              "version": "[11.0.6, )"
+            },
+            "Avalonia.ReactiveUI": {
+              "target": "Package",
+              "version": "[11.0.6, )"
+            },
+            "Avalonia.Themes.Fluent": {
+              "target": "Package",
+              "version": "[11.0.6, )"
+            },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
+            "Microsoft.Office.Interop.Outlook": {
+              "target": "Package",
+              "version": "[15.0.4797.1004, )"
+            },
+            "Microsoft.Windows.Compatibility": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+C:\Users\cmoore\OneDrive - United Petroleum Transports\Scripts-Codebases-Local Repo\C#\PstFuze\obj\Debug\net7.0\PstFuze.csproj.AssemblyReference.cache
+C:\Users\cmoore\OneDrive - United Petroleum Transports\Scripts-Codebases-Local Repo\C#\PstFuze\obj\Debug\net7.0\Avalonia\Resources.Inputs.cache
+C:\Users\cmoore\OneDrive - United Petroleum Transports\Scripts-Codebases-Local Repo\C#\PstFuze\obj\Debug\net7.0\Avalonia\resources
+C:\Users\cmoore\OneDrive - United Petroleum Transports\Scripts-Codebases-Local Repo\C#\PstFuze\obj\Debug\net7.0\PstFuze.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cmoore\OneDrive - United Petroleum Transports\Scripts-Codebases-Local Repo\C#\PstFuze\obj\Debug\net7.0\PstFuze.AssemblyInfoInputs.cache
+C:\Users\cmoore\OneDrive - United Petroleum Transports\Scripts-Codebases-Local Repo\C#\PstFuze\obj\Debug\net7.0\PstFuze.AssemblyInfo.cs
+C:\Users\cmoore\OneDrive - United Petroleum Transports\Scripts-Codebases-Local Repo\C#\PstFuze\obj\Debug\net7.0\PstFuze.csproj.CoreCompileInputs.cache
+C:\Users\cmoore\OneDrive - United Petroleum Transports\Scripts-Codebases-Local Repo\C#\PstFuze\obj\Debug\net7.0\PstFuze.sourcelink.json
