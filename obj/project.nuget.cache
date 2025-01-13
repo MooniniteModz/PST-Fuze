@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EmaDY90pvM4=",
+  "dgSpecHash": "mnExfSqL9Bs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\C#\\PstFuze\\PstFuze.csproj",
+  "projectFilePath": "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\GitHub Repos\\PstFuze\\PstFuze.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xadm_cmoore\\.nuget\\packages\\aspose.email\\23.12.0\\aspose.email.23.12.0.nupkg.sha512",
     "C:\\Users\\xadm_cmoore\\.nuget\\packages\\avalonia\\11.0.6\\avalonia.11.0.6.nupkg.sha512",

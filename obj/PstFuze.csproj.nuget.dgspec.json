@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\C#\\PstFuze\\PstFuze.csproj": {}
+    "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\GitHub Repos\\PstFuze\\PstFuze.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\C#\\PstFuze\\PstFuze.csproj": {
+    "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\GitHub Repos\\PstFuze\\PstFuze.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\C#\\PstFuze\\PstFuze.csproj",
+        "projectUniqueName": "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\GitHub Repos\\PstFuze\\PstFuze.csproj",
         "projectName": "PstFuze",
-        "projectPath": "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\C#\\PstFuze\\PstFuze.csproj",
+        "projectPath": "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\GitHub Repos\\PstFuze\\PstFuze.csproj",
         "packagesPath": "C:\\Users\\xadm_cmoore\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\C#\\PstFuze\\obj\\",
+        "outputPath": "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\GitHub Repos\\PstFuze\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\xadm_cmoore\\AppData\\Roaming\\NuGet\\NuGet.Config"
