@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.IO;
 using Redemption;
+using PSTFuze.Services;
 
 namespace PSTFuze.Services;
 
@@ -172,7 +173,7 @@ public class PstMergerService : IPstMergerService
             // Copy messages in this folder
             CopyMessages(sourceFolder, targetFolder, progress, processedFiles, totalFiles, cancellationToken);
 
-            // Recursively copy subfolders
+            // Recursively copy 
             foreach (RDOFolder sourceSubFolder in sourceFolder.Folders)
             {
                 cancellationToken.ThrowIfCancellationRequested();

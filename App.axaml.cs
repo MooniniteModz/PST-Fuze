@@ -8,7 +8,9 @@ using System.Threading.Tasks;
 using Microsoft.Win32;
 using System;
 
+
 namespace PSTFuze;
+
 
 public partial class App : Application
 {
@@ -25,6 +27,8 @@ public partial class App : Application
             try
             {
                 // Try to write to HKEY_CURRENT_USER
+                System.Diagnostics.Debug.AutoFlush = true;
+                System.Diagnostics.Trace.AutoFlush = true;
                 string regPath = @"Software\Dimastr\Redemption";
                 using (var key = Registry.CurrentUser.CreateSubKey(regPath))
                 {

@@ -58,8 +58,14 @@ public partial class MainWindowViewModel : ObservableObject
 
         foreach (var file in files)
         {
-            PstFiles.Add(new PstFileModel { FilePath = file.Path.LocalPath });
-            StatusMessage = $"Added PST file: {file.Path.LocalPath}";
+            var filePath = file.Path.LocalPath;
+            PstFiles.Add(new PstFileModel
+            {
+                FilePath = filePath,
+                FileName = System.IO.Path.GetFileName(filePath),
+                Status = "Ready"
+            });
+            StatusMessage = $"Added PST file: {filePath}";
         }
     }
 
