@@ -10,18 +10,23 @@
         "projectUniqueName": "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\GitHub Repos\\PstFuze\\PstFuze.csproj",
         "projectName": "PstFuze",
         "projectPath": "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\GitHub Repos\\PstFuze\\PstFuze.csproj",
-        "packagesPath": "C:\\Users\\xadm_cmoore\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\cmoore\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\cmoore\\OneDrive - United Petroleum Transports\\Scripts-Codebases-Local Repo\\GitHub Repos\\PstFuze\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\xadm_cmoore\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\cmoore\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {}
         },
         "frameworks": {
           "net8.0": {
@@ -39,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -98,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
