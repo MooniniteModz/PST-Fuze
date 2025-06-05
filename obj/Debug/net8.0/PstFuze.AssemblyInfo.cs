@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PstFuze")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29144474b673c9afe4bbfe37964019a2f6522344")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+740a43327860ff6297a8ea96056d5d26c2f5bac2")]
 [assembly: System.Reflection.AssemblyProductAttribute("PstFuze")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PstFuze")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
