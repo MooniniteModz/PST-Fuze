@@ -315,21 +315,6 @@ Please use our [GitHub Issues](https://github.com/MooniniteModz/PST-Fuze/issues)
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-### Third-Party Libraries
-
-- **Avalonia UI** - MIT License
-- **Microsoft Extensions** - MIT License  
-- **System.Text.Json** - MIT License
-
----
-
-## Acknowledgments
-
-- **Avalonia Team** - For the amazing cross-platform UI framework
-- **Microsoft** - For PST format documentation and .NET platform
-- **Contributors** - Everyone who has contributed to this project
-- **Community** - Users who provide feedback and bug reports
-
 ---
 
 ## Support
