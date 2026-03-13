@@ -1,4 +1,4 @@
-# "                PST-Fuze                "
+# PST-Fuze
 
 > **Cross-Platform Desktop Application for Outlook PST File Management**
 
