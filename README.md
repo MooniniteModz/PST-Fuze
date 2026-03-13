@@ -44,13 +44,13 @@ PST-Fuze is a powerful, cross-platform desktop application built with **Avalonia
 <tr>
 <td width="50%">
 
-### 📂 File Management
+### File Management
 - **PST File Viewer** - Browse PST contents with familiar tree structure
 - **Multiple Format Support** - ANSI and Unicode PST files
 - **Password Protection** - Open encrypted PST files securely
 - **Large File Handling** - Efficiently process PST files up to 50GB
 
-### 🔍 Search & Filter
+### Search & Filter
 - **Advanced Search** - Find emails by sender, subject, date, content
 - **Quick Filters** - Filter by folder, date range, message type
 - **Full-Text Search** - Search within email content and attachments
@@ -59,13 +59,13 @@ PST-Fuze is a powerful, cross-platform desktop application built with **Avalonia
 </td>
 <td width="50%">
 
-### 📊 Analysis & Reporting
+###  Analysis & Reporting
 - **Mailbox Statistics** - Folder sizes, message counts, storage usage
 - **Timeline View** - Visualize email activity over time
 - **Sender Analysis** - Top senders, message distribution
 - **Export Reports** - Generate detailed analysis reports
 
-### 🔄 Data Export
+### Data Export
 - **Multiple Formats** - Export to EML, MSG, MBOX, PDF, CSV
 - **Selective Export** - Choose specific folders or messages
 - **Batch Operations** - Export multiple items simultaneously
@@ -84,9 +84,9 @@ PST-Fuze is a powerful, cross-platform desktop application built with **Avalonia
 **👉 [Download Latest Release](https://github.com/MooniniteModz/PST-Fuze/releases)**
 
 Available for:
-- 🪟 **Windows** - Windows 10/11 (x64)
-- 🍎 **macOS** - macOS 10.15+ (Intel & Apple Silicon)
-- 🐧 **Linux** - Ubuntu 18.04+, Fedora 32+, other distributions
+- **Windows** - Windows 10/11 (x64)
+- **macOS** - macOS 10.15+ (Intel & Apple Silicon)
+- **Linux** - Ubuntu 18.04+, Fedora 32+, other distributions
 
 ### Build from Source
 
@@ -182,7 +182,7 @@ Ctrl+O (Cmd+O on macOS)
 
 #### Searching Emails
 ```
-1. Click search box (🔍) or press Ctrl+F
+1. Click search box or press Ctrl+F
 2. Enter search terms:
    - "invoice" - Search all content
    - "from:john@company.com" - Find emails from specific sender
@@ -326,9 +326,5 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ---
 
 <div align="center">
-
-**Built with ❤️ using [Avalonia UI](https://avaloniaui.net/) and [.NET](https://dotnet.microsoft.com/)**
-
-⭐ **If PST-Fuze helped you, please star this repository!**
 
 </div>
