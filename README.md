@@ -29,12 +29,12 @@ PST-Fuze is a powerful, cross-platform desktop application built with **Avalonia
 
 ### Why Choose PST-Fuze?
 
-- 🌐 **Cross-Platform** - Works on Windows, macOS, and Linux
-- 🎨 **Modern UI** - Clean, intuitive interface built with Avalonia
-- ⚡ **High Performance** - Efficient handling of large PST files
-- 🔒 **Secure** - Handles password-protected PST files safely
-- 🆓 **Open Source** - MIT licensed, community-driven development
-- 🛠️ **No Dependencies** - No need for Microsoft Outlook installation
+-  **Cross-Platform** - Works on Windows, macOS, and Linux
+-  **Modern UI** - Clean, intuitive interface built with Avalonia
+-  **High Performance** - Efficient handling of large PST files
+-  **Secure** - Handles password-protected PST files safely
+-  **Open Source** - MIT licensed, community-driven development
+-  **No Dependencies** - No need for Microsoft Outlook installation
 
 ---
 
@@ -81,7 +81,7 @@ PST-Fuze is a powerful, cross-platform desktop application built with **Avalonia
 
 ### Download Releases
 
-**👉 [Download Latest Release](https://github.com/MooniniteModz/PST-Fuze/releases)**
+** [Download Latest Release](https://github.com/MooniniteModz/PST-Fuze/releases)**
 
 Available for:
 - **Windows** - Windows 10/11 (x64)
